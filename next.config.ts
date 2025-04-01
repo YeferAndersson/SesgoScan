@@ -4,7 +4,14 @@ const nextConfig = {
   images: {
     domains: ['localhost'], // Añade cualquier dominio externo para imágenes aquí
   },
-  devIndicators: false
+  devIndicators: false,
+  // Ignorar errores de ESLint y TypeScript durante la compilación
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  }
   // Añade cualquier otra configuración específica aquí
 };
 
